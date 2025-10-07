@@ -14,6 +14,8 @@ int main(void) {
         }
         counter++;
     }while(counter < 3);
+    if (counter == 3) {
     printf("Too many failed attempts. Exiting...\n");
+    }
     return 0;
 }

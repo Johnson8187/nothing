@@ -5,7 +5,7 @@ int main(void) {
     int amount;
     int balance = 1000;
     
-    while(1){  // 真正的無限循環
+    while(1){ 
         printf("Enter option:");
         scanf("%d", &option);
         switch(option) {
