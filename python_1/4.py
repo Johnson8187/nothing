@@ -1,5 +1,4 @@
-print("請輸入一個正整數:")
-n = int(input())
+n = int(input("請輸入一個正整數:"))
 for i in range(1, n+1):
     # 計算空格數量 (n-i個空格)
     spaces = " " * (n - i)
