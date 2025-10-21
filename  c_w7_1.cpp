@@ -14,7 +14,7 @@ int main(void) {
     for (int i = 0; i < STUDENTS; ++i) {
         printf("Enter %d scores for student %d: ", EXAMS, i + 1);
         for (int j = 0; j < EXAMS; ++j) {
-            if (scanf_s("%d", &scores[i][j]) != 1) {
+            if (scanf("%d", &scores[i][j]) != 1) {
                 fprintf(stderr, "\nInvalid input. Please enter integers.\n");
                 return 1;
             }
