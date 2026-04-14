@@ -7,10 +7,6 @@ void printVector(const vector<int>& data)
 {
 	for (size_t i = 0; i < data.size(); ++i)
 	{
-		if (i > 0)
-		{
-			cout << ' ';
-		}
 		cout << data[i];
 	}
 	cout << endl;
