@@ -6,7 +6,7 @@
 using namespace std;
 
 int main() {
-    // 建立3位玩家
+    // 建立3位玩家 用法：Player playerx(string n, int num)
     Player player1("Player 1", 1);
     Player player2("Player 2", 2);
     Player player3("Player 3", 3);
