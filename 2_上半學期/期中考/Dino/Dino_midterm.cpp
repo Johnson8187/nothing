@@ -6,7 +6,11 @@
 using namespace std;
 
 int main() {
-    Player p[3] = { Player("Player 1"), Player("Player 2"), Player("Player 3") };
+    Player p[3] = {
+        Player("Player 1"),
+        Player("Player 2"),
+        Player("Player 3")
+    };
 
     while (true) {
         system("cls");
@@ -17,13 +21,14 @@ int main() {
         cout << "4. 離開\n選擇: ";
         int c;
         try {
-            if (!(cin >> c) || c < 1 || c > 4) {
+            cin >> c;
+            if ( c < 1 or c > 4) {
                 cin.clear();
                 cin.ignore(100, '\n');
                 throw invalid_argument("只能輸入 1~4 哦！");
             }
             if (c == 4) break;
-            Game().play(p[c - 1]);
+            else Game().play(p[c - 1]);
         }
         catch (const invalid_argument& e) {
             cout << "錯誤: " << e.what() << "\n";

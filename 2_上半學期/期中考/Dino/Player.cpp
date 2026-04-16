@@ -3,12 +3,15 @@
 
 using namespace std;
 
-Player::Player(string n) : name(n), highestScore(0) {}
+Player::Player(string n) {
+    name = n;
+    highestScore = 0;
+}
 
 void Player::updateScore(int s) {
     if (s > highestScore) highestScore = s;
 }
 
 void Player::info() {
-    cout << name << " (³Ì°ª¤À: " << highestScore << ")\n";
+    cout << name << " (æœ€é«˜åˆ†: " << highestScore << ")\n";
 }
