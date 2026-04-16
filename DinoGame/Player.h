@@ -3,13 +3,11 @@
 
 #include <string>
 
-using namespace std;
-
 class Player {
-    string name;
+    std::string name;
     int highestScore;
 public:
-    Player(string n);
+    Player(std::string n);
     void updateScore(int s);
     void info();
 };
